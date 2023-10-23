@@ -16,6 +16,7 @@ window.addEventListener('scroll', function () {
     if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight) {
         if (!isSearchResult) {
             loadPokemon();
+            
         }
     }
 })

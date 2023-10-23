@@ -5,7 +5,7 @@ function renderPokemonHtml(newPokemon, pokemonCap) {
     <div id="pokemon${newPokemon['id']}" class="pokemon" onclick="openStats(${newPokemon['id']})">
             <span>${pokemonCap}</span>
         <div id="types${newPokemon['id']}">
-        </div>
+    </div>
         <img class="pokeball-img" src="img/pokeball.png">
         <img class="pokemon-img" src="${newPokemon['sprites']['other']['official-artwork']['front_default']}">
     </div>
@@ -17,7 +17,9 @@ function renderTypeHtml(newPokemon) {
     for (let i = 0; i < newPokemon['types'].length; i++) {
         const type = newPokemon['types'][i];
         document.getElementById('types' + newPokemon['id']).innerHTML += `
-    <div><div class="type-container">${type['type']['name']}</div></div>
+    <div>
+         <div class="type-container">${type['type']['name']}</div>
+    </div>
     `;
     }
 }

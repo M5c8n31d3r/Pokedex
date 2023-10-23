@@ -21,11 +21,14 @@
 </head>
 
 <body id="body" onload="loadAllPokemons()">
+    <div class="bg">
+
     <header class="header">
         <div class="header-container">
             <img class="pokedex-logo" src="img/Pokedex_logo.png" alt="">
+            <img class="gif" src="img/pikachu-running.gif" alt="">
             <div class="search-container">
-                <input class="input" id="search-pokemon" onkeyup="pokemonNames()" placeholder="search...">
+                <input class="input" id="search-pokemon" onkeyup="pokemonNames()" placeholder="...">
             </div>
         </div>
     </header>
@@ -137,7 +140,8 @@
         <img id="stat-img" class="stat-img" src="">
         <img class="back-img" src="img/back.png" onclick="closeStats()">
     </div>
-    <!-- <button type="button" id="loadMore" class="btn btn-outline-dark" onclick="loadPokemon()">MORE POKEMON's</button> -->
+    <button type="button" id="loadMore" class="btn btn-outline-dark" onclick="loadPokemon()">MORE POKEMON's</button>
+</div>
 </body>
 
 </html>
